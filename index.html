@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>German Project</title>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-repeat: no-repeat; background-size: cover; background-image: url('roland-larsson-m2De0QR_tWo-unsplash.jpg');">
+	<?php $name1=$name2=$pword1=$pword2="";?>
+<div id="bodydiv">
+	<ul class="head">
+		<li class="logsign" style="float: left;"><h3>S m a r t l y s e r</h3></li>
+		<li style="float: right;">
+			<button class="logsign" data-toggle="modal" onclick="blurback()" data-target="#myModal"><h4>Login / Sign Up</h4></button></li>
+		</ul>
+		<br><br><br><br><br>
+		<center id="abcd">
+			<div class="headcontain">
+				<div class="headcontain-inner">
+					<div class="headcontain-front">
+						<h1><b>s m a r t l y s e r</b></h1>
+					</div>
+					<div class="headcontain-back">
+						<h4>a place for all your energy needs and solutions.</h4>
+					</div>
+				</div>	
+			</div>
+				<br><br><br>
+			<div class="navtab" border="2px" align="center">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-list--item" style="border-radius: 10px 0px 0px 0px;"><button class="navbutton" onclick="openDetails('About')" style="border-radius: 10px 0px 0px 0px;">About</button></li>
+						<li class="nav-list--item"><button class="navbutton" onclick="openDetails('WhyUs')">Why us</button></li>
+						<li class="nav-list--item"><button class="navbutton" onclick="openDetails('ContactUs')">Contact Us</button></li>		
+					</ul>
+				</nav>
+				<div class="navcontent" id="About">
+					<p>
+						Dexter is an American television crime drama mystery series that aired on Showtime from October 1, 2006, to September 22, 2013.[1] Set in Miami, the series centers on Dexter Morgan (Michael C. Hall), a forensic technician specializing in bloodstain pattern analysis for the fictional Miami Metro Police Department, who leads a secret parallel life as a vigilante serial killer, hunting down murderers who have slipped through the cracks of the justice system. The show's first season was derived from the novel Darkly Dreaming Dexter (2004), the first in a series of novels by Jeff Lindsay. It was adapted for television by screenwriter James Manos Jr., who wrote the first episode. Subsequent seasons evolved independently of Lindsay's works.
+					</p>	
+				</div>
+				<div class="navcontent" id="WhyUs" style="display: none;">
+					<p>
+						Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show was both produced and filmed in Belfast and elsewhere in the United Kingdom. Filming locations also included Canada, Croatia, Iceland, Malta, Morocco, and Spain.[1] The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
+					</p>		
+				</div>	
+				<div class="navcontent" id="ContactUs" style="display: none;">
+					<p>
+						A Song of Ice and Fire is a series of epic fantasy novels by the American novelist and screenwriter George R. R. Martin. He began the first volume of the series, A Game of Thrones, in 1991, and it was published in 1996. Martin, who initially envisioned the series as a trilogy, has published five out of a planned seven volumes. The fifth and most recent volume of the series, A Dance with Dragons, was published in 2011 and took Martin six years to write. He is currently writing the sixth novel, The Winds of WinterA Song of Ice and Fire takes place on the fictional continents Westeros and Essos. The point of view of each chapter in the story is a limited perspective of a range of characters growing from nine in the first novel, to 31 characters by the fifth novel. Three main stories interweave: a dynastic war among several families for control of Westeros, the rising threat of the supernatural Others in northernmost Westeros, and the ambition of Daenerys Targaryen, the deposed king's exiled daughter, to assume the Iron Throne.
+					</p>		
+				</div>
+				<script type="text/javascript">
+					function openDetails(tabname,headname){
+						var i;
+						var x=document.getElementsByClassName("navcontent");
+						for(i=0;i<x.length;i++){
+							x[i].style.display="none";
+						}
+						document.getElementById(tabname).style.display="block";
+					}
+					function swipe(divname,headname){						
+						var x=document.getElementsByClassName("modal-body");
+						for(i=0;i<x.length;i++){
+							x[i].style.display="none";
+						}
+						document.getElementById(divname).style.display="block";
+
+						 setTimeout(carousel, 250);
+						 
+						 var y=document.getElementsByClassName("modal-title");
+						 for(i=0;i<x.length;i++){
+							y[i].style.display="none";
+						}
+						y.getElementById(headname).style.display="block";
+
+					}
+
+					function blurback(){
+						var x=document.getElementById("bodydiv");
+						document.getElementById("bodydiv").className = "bodydiv-after";}
+
+					function normback(){
+						document.getElementById("bodydiv").className = "bodydiv-before";}	
+				</script>
+			</div>
+		</div>
+	</div>		
+	<a href="profile.html">NEXT PAGE</a>
+	</center>
+</div>/
+<center>
+			<!-- Login  -->
+			<div class="modal fade w3-animate-zoom" id="myModal" role="dialog">
+				<div class="modal-dialog"> 
+					<div class="modal-content" style="width: inherit;">
+						<div>
+							<div class="modal-header" >
+								<button type="button" class="close" data-dismiss="modal"onclick="normback()" style="color:  black;">&times;</button>
+								<h4 class="modal-title" id="head1" style="display: block; color: black;">Login</h4>
+							</div>
+							<div class="modal-body w3-animate-left" id="modbod1" style="overflow: hidden;">
+
+
+								<form action="/action_page.php">
+									<br>
+									<input type="mail" name="uname" placeholder="Username" class="inputbody" ><button class="close-icon" type="reset"></button>
+									<br><br>
+									<input type="password" name="pword" placeholder="Password" class="inputbody"><button class="close-icon" type="reset"></button>
+									<br><br><br>
+									<input type="submit" value="Submit"
+									onclick="file:"home/sreejitkar999/German%20Colab/website/profile.html"" class="submitbut">
+								</form>
+							</div>
+						</div>
+						<div>
+							<div class="modal-header" style="display: none">
+								<button type="button" class="close" data-dismiss="modal" onclick="normback()">&times;</button>
+								<h4 class="modal-title" id="head2" style="display: none;">Sign Up</h4>
+							</div>
+							<div class="modal-body w3-animate-right" id="modbod2" style="display: none; overflow: hidden;">
+								<form action="/action_page.php">
+									<br>
+									<input type="text" name="uname" placeholder="Name" class="inputbody">
+									<button class="close-icon" type="reset"></button>
+									<br><br>
+									<input type="password" name="pword" placeholder="New Password" class="inputbody">
+									<br><br>
+									<input type="text" name="Region" placeholder="Region" class="inputbody">
+									<button class="close-icon" type="reset"></button>
+									<br><br><br>
+									<input type="submit" value="Submit" class="submitbut">
+								</form>
+							</div>
+						</div>
+						<button class="w3-button w3-display-left" onclick="swipe('modbod1','head2')" style="background-color: transparent;">&#10094;</button>
+						<button class="w3-button w3-display-right" onclick="swipe('modbod2','head1')" style="background-color: transparent;">&#10095;</button>
+					</div>
+				</div>
+			</center>
+			</div>
+</body>
+</html>

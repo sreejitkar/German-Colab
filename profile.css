@@ -1,0 +1,144 @@
+.*{
+	outline: none;
+
+}
+.headerdiv{
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+@import url('https://www.fontify.me/wf/be3b96092eb68c3b54ca6718c1777f8c');
+body{
+font-family: font92723;
+}
+
+.head{
+	position: sticky;
+	list-style: none;
+	overflow: hidden;
+	top: 0;
+	background-color: rgba(216, 216, 216, 0.1);
+	color: #ffffff;
+	margin: 0;
+	display: block;
+	padding: 0px;
+}
+
+.logsign{
+	color: white;
+	background-color: rgba(216, 216, 216, 0.01);
+	border:none;
+	display: inline-block;
+	padding: 20px 30px;
+	margin: 0;
+	height: 100%;
+}
+
+.logsign:hover{
+	background-color:rgba(44, 182, 246, 0.6);
+	transition-duration: 0.4s;
+	box-shadow: 2px;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.headerdiv{
+	padding-right: 10px;
+}
+
+.headline{
+	color: white;
+}
+
+.innerdiv{
+	width: 45%;
+	text-align: justify;
+	padding: 30px;
+	border: 1px solid white;
+	margin: 2px;
+	border-radius: 20px;
+	z-index: 2;
+	border-width: medium;
+	transition-duration: 0.3s;
+	border-color: linear-gradient(to right, red, purple);
+}
+
+.innerdiv:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 15px 5px rgba(44, 182, 246, 0.6);
+	cursor: pointer;
+
+}
+.fieldspan{
+	font-size: 190%;
+	padding: 30px;
+}
+
+.fieldspan:hover{
+	text-shadow: 10px greens;
+
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url('blue-universe-956981.jpg');
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headcontain {
+	font-family: font92720;
+  background-color: transparent;
+  height: 100px;
+  width: 300px;
+  perspective: 1000px;
+}
+
+.headcontain-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.headcontain:hover .headcontain-inner {
+  transform: rotateY(180deg);
+}
+
+.headcontain-front, .headcontain-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: transparent;
+}
+
+.headcontain-front {
+  background-color: transparent;
+  color: black;
+/*  border: 2px solid black;
+*/  padding-top: 10px;
+  border-width: 10px;
+}
+
+.headcontain-back {
+	padding: 10px
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+
